@@ -37,7 +37,6 @@
 
         .categoria{
             margin-bottom:30px;
-            animation: fadeUp 0.8s ease forwards;
         }
 
         .categoria h2{
@@ -57,23 +56,33 @@
             font-weight:bold;
         }
 
+        /* IMAGENS LOCAIS */
         .imagem-item{
-            margin-top:15px;
-            text-align:center;
+            display:flex;
+            justify-content:center;
+            gap:12px;
+            margin:15px 0;
+            flex-wrap:wrap;
         }
 
         .imagem-item img{
-            width:45%;
-            margin:10px auto;
-            display:block;
+            width:42%;
             border-radius:10px;
         }
 
-        /* BOTÃO WHATSAPP */
-        .botao-garcom{
+        /* BOTÃO WHATSAPP CENTRAL */
+        .area-garcom{
             position:fixed;
             bottom:20px;
-            right:20px;
+            left:50%;
+            transform:translateX(-50%);
+            display:flex;
+            align-items:center;
+            gap:10px;
+            z-index:999;
+        }
+
+        .botao-garcom{
             background:#25D366;
             color:#fff;
             padding:16px 22px;
@@ -82,24 +91,19 @@
             font-weight:bold;
             text-decoration:none;
             box-shadow:0 6px 15px rgba(0,0,0,0.35);
-            z-index:999;
+            white-space:nowrap;
         }
 
-        /* PERSONAGEM APONTANDO */
+        /* PERSONAGEM AO LADO DIREITO */
         .personagem{
-            position:fixed;
-            bottom:95px;
-            right:90px; /* deslocado para apontar */
-            width:120px;
-            z-index:998;
-            transform: rotate(-5deg);
+            width:95px;
             animation: flutuar 2.5s ease-in-out infinite;
         }
 
         @keyframes flutuar{
-            0%{ transform: translateY(0) rotate(-5deg); }
-            50%{ transform: translateY(-8px) rotate(-5deg); }
-            100%{ transform: translateY(0) rotate(-5deg); }
+            0%{ transform: translateY(0); }
+            50%{ transform: translateY(-6px); }
+            100%{ transform: translateY(0); }
         }
 
         footer{
@@ -136,10 +140,8 @@
         <div class="item"><div>Porção de Batata Frita</div><span>R$ 0,00</span></div>
 
         <div class="imagem-item">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/French_fries.jpg">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/French_fries_with_ketchup.jpg">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Torresmo.jpg">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Torresmo_crocante.jpg">
+            <img src="batata.jpg" alt="Batata frita">
+            <img src="torresmo.jpg" alt="Torresmo">
         </div>
 
         <div class="item"><div>Porção de Calabresa</div><span>R$ 0,00</span></div>
@@ -152,16 +154,17 @@
     © Bar dos Meninos – Cardápio Digital
 </footer>
 
-<!-- PERSONAGEM GARÇOM -->
-<img src="garçom.png" class="personagem" alt="Garçom chamando atenção">
+<!-- ÁREA BOTÃO + PERSONAGEM -->
+<div class="area-garcom">
+    <a 
+      class="botao-garcom"
+      href="https://wa.me/5516982250638?text=Olá!%20Gostaria%20de%20chamar%20o%20garçom."
+      target="_blank">
+      🍺 Chamar Garçom
+    </a>
 
-<!-- BOTÃO WHATSAPP -->
-<a 
-  class="botao-garcom"
-  href="https://wa.me/5516982250638?text=Olá!%20Gostaria%20de%20chamar%20o%20garçom."
-  target="_blank">
-  🍺 Chamar Garçom
-</a>
+    <img src="garçom.png" class="personagem" alt="Garçom apontando">
+</div>
 
 </body>
 </html>
