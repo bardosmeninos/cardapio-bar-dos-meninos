@@ -34,8 +34,10 @@
             padding:20px;
         }
 
+        /* ===== CATEGORIAS ===== */
         .categoria{
             margin-bottom:30px;
+            animation: fadeUp 0.8s ease forwards;
         }
 
         .categoria h2{
@@ -44,30 +46,47 @@
             color:#1E3A5F;
         }
 
+        /* ===== ITENS ===== */
         .item{
             display:flex;
             justify-content:space-between;
             padding:12px 0;
             border-bottom:1px dashed #ccc;
+            animation: fadeUp 0.8s ease forwards;
         }
 
         .item span{
             font-weight:bold;
         }
 
+        /* ===== IMAGENS ===== */
         .imagem-item{
             margin-top:10px;
-            border-radius:10px;
-            overflow:hidden;
+            text-align:center;
         }
 
-       .imagem-item img{
-    width:50%;
-    display:block;
-    margin: 0 auto;
-    border-radius:10px;
-}
+        .imagem-item img{
+            width:50%;
+            margin:10px auto;
+            display:block;
+            border-radius:10px;
+            transition: transform 0.3s ease;
+        }
 
+        .imagem-item img:hover{
+            transform: scale(1.05);
+        }
+
+        /* ===== ANIMAÇÃO ===== */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         footer{
@@ -126,11 +145,10 @@
             <span>R$ 0,00</span>
         </div>
 
- <div class="imagem-item">
-    <img src="https://images.unsplash.com/photo-1639024471283-03518883512d" alt="Batata frita">
-    <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add" alt="Porção de batata frita">
-</div>
-
+        <div class="imagem-item">
+            <img src="https://images.unsplash.com/photo-1639024471283-03518883512d" alt="Batata frita">
+            <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add" alt="Porção de batata frita">
+        </div>
 
         <div class="item">
             <div>Porção de Calabresa</div>
