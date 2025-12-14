@@ -56,7 +56,6 @@
             font-weight:bold;
         }
 
-        /* IMAGENS LOCAIS */
         .imagem-item{
             display:flex;
             justify-content:center;
@@ -70,15 +69,14 @@
             border-radius:10px;
         }
 
-        /* BOTÃO WHATSAPP CENTRAL */
+        /* ÁREA GARÇOM */
         .area-garcom{
             position:fixed;
             bottom:20px;
             left:50%;
             transform:translateX(-50%);
             display:flex;
-            align-items:center;
-            gap:10px;
+            align-items:flex-end;
             z-index:999;
         }
 
@@ -91,12 +89,15 @@
             font-weight:bold;
             text-decoration:none;
             box-shadow:0 6px 15px rgba(0,0,0,0.35);
-            white-space:nowrap;
+            position:relative;
+            z-index:2;
         }
 
-        /* PERSONAGEM AO LADO DIREITO */
         .personagem{
-            width:95px;
+            width:90px;
+            margin-left:-25px; /* encosta no botão */
+            margin-bottom:10px; /* sobe um pouco */
+            z-index:3;
             animation: flutuar 2.5s ease-in-out infinite;
         }
 
@@ -136,16 +137,23 @@
 
     <div class="categoria">
         <h2>🍟 Porções</h2>
-
         <div class="item"><div>Porção de Batata Frita</div><span>R$ 0,00</span></div>
 
         <div class="imagem-item">
-            <img src="batata.jpg" alt="Batata frita">
-            <img src="torresmo.jpg" alt="Torresmo">
+            <img src="batata.jpg">
+            <img src="torresmo.jpg">
         </div>
 
         <div class="item"><div>Porção de Calabresa</div><span>R$ 0,00</span></div>
         <div class="item"><div>Porção Mista</div><span>R$ 0,00</span></div>
+    </div>
+
+    <div class="categoria">
+        <h2>🍔 Lanches</h2>
+        <div class="item"><div>Hambúrguer Simples</div><span>R$ 0,00</span></div>
+        <div class="item"><div>Hambúrguer Especial</div><span>R$ 0,00</span></div>
+        <div class="item"><div>X-Bacon</div><span>R$ 0,00</span></div>
+        <div class="item"><div>X-Tudo</div><span>R$ 0,00</span></div>
     </div>
 
 </section>
@@ -154,13 +162,12 @@
     © Bar dos Meninos – Cardápio Digital
 </footer>
 
-<!-- ÁREA BOTÃO + PERSONAGEM -->
+<!-- BOTÃO + PERSONAGEM -->
 <div class="area-garcom">
-    <a 
-      class="botao-garcom"
-      href="https://wa.me/5516982250638?text=Olá!%20Gostaria%20de%20chamar%20o%20garçom."
-      target="_blank">
-      🍺 Chamar Garçom
+    <a class="botao-garcom"
+       href="https://wa.me/5516982250638?text=Olá!%20Gostaria%20de%20chamar%20o%20garçom."
+       target="_blank">
+       🍺 Chamar Garçom
     </a>
 
     <img src="garçom.png" class="personagem" alt="Garçom apontando">
