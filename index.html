@@ -85,20 +85,21 @@
             z-index:999;
         }
 
-        /* PERSONAGEM */
+        /* PERSONAGEM APONTANDO */
         .personagem{
             position:fixed;
             bottom:95px;
-            right:25px;
+            right:90px; /* deslocado para apontar */
             width:120px;
             z-index:998;
+            transform: rotate(-5deg);
             animation: flutuar 2.5s ease-in-out infinite;
         }
 
         @keyframes flutuar{
-            0%{ transform: translateY(0); }
-            50%{ transform: translateY(-8px); }
-            100%{ transform: translateY(0); }
+            0%{ transform: translateY(0) rotate(-5deg); }
+            50%{ transform: translateY(-8px) rotate(-5deg); }
+            100%{ transform: translateY(0) rotate(-5deg); }
         }
 
         footer{
@@ -135,11 +136,8 @@
         <div class="item"><div>Porção de Batata Frita</div><span>R$ 0,00</span></div>
 
         <div class="imagem-item">
-            <!-- BATATA -->
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/French_fries.jpg">
             <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/French_fries_with_ketchup.jpg">
-
-            <!-- TORRESMO -->
             <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Torresmo.jpg">
             <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Torresmo_crocante.jpg">
         </div>
@@ -154,8 +152,8 @@
     © Bar dos Meninos – Cardápio Digital
 </footer>
 
-<!-- PERSONAGEM -->
-<img src="personagem.png" class="personagem" alt="Mascote do Bar">
+<!-- PERSONAGEM GARÇOM -->
+<img src="garçom.png" class="personagem" alt="Garçom chamando atenção">
 
 <!-- BOTÃO WHATSAPP -->
 <a 
