@@ -80,6 +80,30 @@
             transform: scale(1.05);
         }
 
+        /* ===== BOTÃO CHAMAR GARÇOM ===== */
+        .botao-garcom{
+            position:fixed;
+            bottom:20px;
+            right:20px;
+            background:#25D366;
+            color:#fff;
+            padding:14px 18px;
+            border-radius:50px;
+            font-size:15px;
+            font-weight:bold;
+            text-decoration:none;
+            display:flex;
+            align-items:center;
+            gap:10px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.3);
+            z-index:999;
+            transition:transform 0.3s ease;
+        }
+
+        .botao-garcom:hover{
+            transform:scale(1.05);
+        }
+
         /* ===== ANIMAÇÃO ===== */
         @keyframes fadeUp {
             from {
@@ -188,6 +212,15 @@
 <footer>
     © Bar dos Meninos – Cardápio Digital
 </footer>
+
+<!-- BOTÃO CHAMAR GARÇOM -->
+<a 
+  class="botao-garcom"
+  href="https://wa.me/5516982250638?text=Olá!%20Gostaria%20de%20chamar%20o%20garçom."
+  target="_blank"
+>
+  🍺 Chamar Garçom
+</a>
 
 </body>
 </html>
