@@ -17,12 +17,11 @@
         header{
             text-align:center;
             padding:25px 15px 10px;
-            background:transparent;
         }
 
         header img{
-            max-width:360px;
-            margin-bottom:8px;
+            max-width:360px; /* LOGO DOBRADA */
+            margin-bottom:10px;
         }
 
         .subtitulo{
@@ -55,7 +54,6 @@
             justify-content:space-between;
             padding:12px 0;
             border-bottom:1px dashed #ccc;
-            animation: fadeUp 0.8s ease forwards;
         }
 
         .item span{
@@ -80,40 +78,44 @@
             transform: scale(1.05);
         }
 
-        /* ===== BOTÃO CHAMAR GARÇOM ===== */
+        /* ===== BOTÃO WHATSAPP ===== */
         .botao-garcom{
             position:fixed;
             bottom:20px;
             right:20px;
-            background:#25D366;
+            background:linear-gradient(135deg,#25D366,#1EBE5D);
             color:#fff;
-            padding:14px 18px;
-            border-radius:50px;
-            font-size:15px;
+            padding:16px 22px;
+            border-radius:18px; /* FORMATO NOVO */
+            font-size:16px;
             font-weight:bold;
             text-decoration:none;
             display:flex;
             align-items:center;
             gap:10px;
-            box-shadow:0 4px 10px rgba(0,0,0,0.3);
+            box-shadow:0 6px 15px rgba(0,0,0,0.35);
             z-index:999;
             transition:transform 0.3s ease;
         }
 
         .botao-garcom:hover{
-            transform:scale(1.05);
+            transform:scale(1.08);
         }
 
-        /* ===== ANIMAÇÃO ===== */
-        @keyframes fadeUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        /* ===== PERSONAGEM ===== */
+        .personagem{
+            position:fixed;
+            bottom:90px;
+            right:25px;
+            width:120px;
+            z-index:998;
+            animation: flutuar 2.5s ease-in-out infinite;
+        }
+
+        @keyframes flutuar{
+            0%{ transform: translateY(0); }
+            50%{ transform: translateY(-8px); }
+            100%{ transform: translateY(0); }
         }
 
         footer{
@@ -137,74 +139,33 @@
 
     <div class="categoria">
         <h2>🍺 Bebidas</h2>
-
-        <div class="item">
-            <div>Cerveja Lata</div>
-            <span>R$ 0,00</span>
-        </div>
-
-        <div class="item">
-            <div>Cerveja Long Neck</div>
-            <span>R$ 0,00</span>
-        </div>
-
-        <div class="item">
-            <div>Chopp Claro</div>
-            <span>R$ 0,00</span>
-        </div>
-
-        <div class="item">
-            <div>Refrigerante Lata</div>
-            <span>R$ 0,00</span>
-        </div>
-
-        <div class="item">
-            <div>Água</div>
-            <span>R$ 0,00</span>
-        </div>
+        <div class="item"><div>Cerveja Lata</div><span>R$ 0,00</span></div>
+        <div class="item"><div>Cerveja Long Neck</div><span>R$ 0,00</span></div>
+        <div class="item"><div>Chopp Claro</div><span>R$ 0,00</span></div>
+        <div class="item"><div>Refrigerante Lata</div><span>R$ 0,00</span></div>
+        <div class="item"><div>Água</div><span>R$ 0,00</span></div>
     </div>
 
     <div class="categoria">
         <h2>🍟 Porções</h2>
 
-        <div class="item">
-            <div>Porção de Batata Frita</div>
-            <span>R$ 0,00</span>
-        </div>
+        <div class="item"><div>Porção de Batata Frita</div><span>R$ 0,00</span></div>
 
         <div class="imagem-item">
-            <!-- BATATA -->
-            <img src="https://images.unsplash.com/photo-1639024471283-03518883512d" alt="Batata frita">
-            <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add" alt="Porção de batata frita">
-
-            <!-- TORRESMO -->
-            <img src="https://images.unsplash.com/photo-1625944230945-1b7ddc56c9c3" alt="Porção de torresmo">
-            <img src="https://images.unsplash.com/photo-1604909053271-3f0f6d2d7a6a" alt="Torresmo crocante">
+            <img src="https://images.unsplash.com/photo-1639024471283-03518883512d">
+            <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add">
+            <img src="https://images.unsplash.com/photo-1625944230945-1b7ddc56c9c3">
+            <img src="https://images.unsplash.com/photo-1604909053271-3f0f6d2d7a6a">
         </div>
 
-        <div class="item">
-            <div>Porção de Calabresa</div>
-            <span>R$ 0,00</span>
-        </div>
-
-        <div class="item">
-            <div>Porção Mista</div>
-            <span>R$ 0,00</span>
-        </div>
+        <div class="item"><div>Porção de Calabresa</div><span>R$ 0,00</span></div>
+        <div class="item"><div>Porção Mista</div><span>R$ 0,00</span></div>
     </div>
 
     <div class="categoria">
         <h2>🍔 Lanches</h2>
-
-        <div class="item">
-            <div>Hambúrguer Simples</div>
-            <span>R$ 0,00</span>
-        </div>
-
-        <div class="item">
-            <div>Hambúrguer Especial</div>
-            <span>R$ 0,00</span>
-        </div>
+        <div class="item"><div>Hambúrguer Simples</div><span>R$ 0,00</span></div>
+        <div class="item"><div>Hambúrguer Especial</div><span>R$ 0,00</span></div>
     </div>
 
 </section>
@@ -213,12 +174,14 @@
     © Bar dos Meninos – Cardápio Digital
 </footer>
 
-<!-- BOTÃO CHAMAR GARÇOM -->
+<!-- PERSONAGEM -->
+<img src="personagem.png" class="personagem" alt="Mascote do Bar">
+
+<!-- BOTÃO WHATSAPP -->
 <a 
   class="botao-garcom"
   href="https://wa.me/5516982250638?text=Olá!%20Gostaria%20de%20chamar%20o%20garçom."
-  target="_blank"
->
+  target="_blank">
   🍺 Chamar Garçom
 </a>
 
