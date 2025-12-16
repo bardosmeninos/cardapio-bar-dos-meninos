@@ -30,6 +30,11 @@ section{
     padding-bottom:6px;
     color:#1E3A5F;
 }
+.subtitulo{
+    margin-top:18px;
+    font-weight:bold;
+    color:#374151;
+}
 .item{
     display:flex;
     justify-content:space-between;
@@ -38,17 +43,6 @@ section{
 }
 .item span{
     font-weight:bold;
-}
-.item .nome{
-    display:flex;
-    align-items:center;
-    gap:6px;
-}
-.item .nome img{
-    width:32px;
-    height:32px;
-    border-radius:6px;
-    object-fit:cover;
 }
 footer{
     text-align:center;
@@ -63,7 +57,6 @@ footer{
     transform:translateX(-50%);
     display:flex;
     align-items:flex-end;
-    z-index:999;
 }
 .botao-garcom{
     background:#25D366;
@@ -100,7 +93,8 @@ footer{
 <div class="categoria">
 <h2>🍺 Cervejas</h2>
 
-<div class="item"><div class="nome"><img src="img/heineken.png">Heineken 600ml</div><span>R$ 15,00</span></div>
+<div class="subtitulo">🍾 Garrafa 600ml</div>
+<div class="item"><div>Heineken 600ml</div><span>R$ 15,00</span></div>
 <div class="item"><div>Stella Artois 600ml</div><span>R$ 14,00</span></div>
 <div class="item"><div>Budweiser 600ml</div><span>R$ 13,00</span></div>
 <div class="item"><div>Spaten 600ml</div><span>R$ 13,00</span></div>
@@ -109,14 +103,17 @@ footer{
 <div class="item"><div>Skol / Brahma / Antarctica 600ml</div><span>R$ 11,00</span></div>
 <div class="item"><div>Petra / Império 600ml</div><span>R$ 9,00</span></div>
 
+<div class="subtitulo">🍺 Litrão</div>
 <div class="item"><div>Budweiser Litrão</div><span>R$ 13,00</span></div>
 <div class="item"><div>Skol / Brahma / Antarctica Litrão</div><span>R$ 13,00</span></div>
 
+<div class="subtitulo">🥂 Long Neck</div>
 <div class="item"><div>Heineken Long Neck</div><span>R$ 8,50</span></div>
 <div class="item"><div>Corona Long Neck</div><span>R$ 8,50</span></div>
 <div class="item"><div>Stella Artois Long Neck</div><span>R$ 8,50</span></div>
 <div class="item"><div>Budweiser Long Neck</div><span>R$ 6,50</span></div>
 
+<div class="subtitulo">🥫 Lata</div>
 <div class="item"><div>Heineken Lata</div><span>R$ 6,00</span></div>
 <div class="item"><div>Budweiser Lata</div><span>R$ 6,00</span></div>
 <div class="item"><div>Original Lata</div><span>R$ 6,00</span></div>
@@ -125,6 +122,7 @@ footer{
 <div class="item"><div>Petra / Império Lata</div><span>R$ 4,00</span></div>
 <div class="item"><div>Amstel Lata</div><span>R$ 4,50</span></div>
 
+<div class="subtitulo">🚫 Sem Álcool</div>
 <div class="item"><div>Heineken Sem Álcool</div><span>R$ 8,00</span></div>
 <div class="item"><div>Brahma Sem Álcool</div><span>R$ 6,00</span></div>
 </div>
@@ -156,22 +154,33 @@ footer{
 
 <!-- DOSES -->
 <div class="categoria">
-<h2>🥃 Doses</h2>
+<h2>🥃 Doses / Copões / Garrafas</h2>
 <div class="item"><div>Tequila</div><span>—</span></div>
-<div class="item"><div>Licor 43</div><span>R$ 20,00</span></div>
-<div class="item"><div>Campari</div><span>R$ 15,00</span></div>
-<div class="item"><div>Ypióca</div><span>R$ 5,00</span></div>
-<div class="item"><div>Salinas</div><span>R$ 5,00</span></div>
+<div class="item"><div>Licor 43 (dose)</div><span>R$ 20,00</span></div>
+<div class="item"><div>Licor 43 (garrafa)</div><span>—</span></div>
+<div class="item"><div>Campari (dose)</div><span>R$ 15,00</span></div>
+<div class="item"><div>Campari (garrafa)</div><span>—</span></div>
+<div class="item"><div>Ypióca (dose)</div><span>R$ 5,00</span></div>
+<div class="item"><div>Ypióca (garrafa)</div><span>—</span></div>
+<div class="item"><div>Salinas (dose)</div><span>R$ 5,00</span></div>
+<div class="item"><div>Salinas (garrafa)</div><span>—</span></div>
 <div class="item"><div>Copão Whisky Red Label</div><span>R$ 20,00</span></div>
 <div class="item"><div>Copão Whisky White Horse</div><span>R$ 20,00</span></div>
 <div class="item"><div>Copão de Gin</div><span>R$ 15,00</span></div>
+<div class="item"><div>Whisky Red Label (dose)</div><span>—</span></div>
+<div class="item"><div>Whisky Red Label (garrafa)</div><span>—</span></div>
+<div class="item"><div>Whisky White Horse (dose)</div><span>—</span></div>
+<div class="item"><div>Whisky White Horse (garrafa)</div><span>—</span></div>
+<div class="item"><div>Whisky Chivas (dose)</div><span>R$ 25,00</span></div>
+<div class="item"><div>Whisky Chivas (garrafa)</div><span>—</span></div>
+<div class="item"><div>Vodka Smirnoff (dose)</div><span>R$ 15,00</span></div>
+<div class="item"><div>Vodka Smirnoff (garrafa)</div><span>—</span></div>
 </div>
 
 <!-- PORÇÕES -->
 <div class="categoria">
-<h2>🍟 Porções</h2>
-
-<div class="item"><div class="nome"><img src="img/batata.png">Batata Frita</div><span>R$ 30,00</span></div>
+<h2>🍟 Porções & Pratos</h2>
+<div class="item"><div>Batata Frita</div><span>R$ 30,00</span></div>
 <div class="item"><div>Batata Frita c/ Bacon e Queijo</div><span>R$ 55,00</span></div>
 <div class="item"><div>Batata Frita c/ Bacon e Cheddar</div><span>R$ 55,00</span></div>
 <div class="item"><div>Polenta Frita</div><span>R$ 20,00</span></div>
@@ -180,8 +189,7 @@ footer{
 <div class="item"><div>Azeitona</div><span>R$ 12,00</span></div>
 <div class="item"><div>Sardinha (sexta)</div><span>R$ 5,00</span></div>
 <div class="item"><div>Moela (quinta)</div><span>R$ 7,00</span></div>
-<div class="item"><div class="nome"><img src="img/costela.png">Costela no Bafo (sex/sáb)</div><span>R$ 65,00 / kg</span></div>
-
+<div class="item"><div>Costela no Bafo (sex/sáb)</div><span>R$ 65,00 / kg</span></div>
 <div class="item"><div>Contra Filé à Moda</div><span>R$ 79,00</span></div>
 <div class="item"><div>Filé de Tilápia</div><span>R$ 69,00</span></div>
 <div class="item"><div>Costelinha de Tambaqui</div><span>R$ 59,00</span></div>
