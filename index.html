@@ -12,56 +12,54 @@
             background:#F5F2EC;
             color:#1F2937;
         }
-
         header{
             text-align:center;
             padding:25px 15px 10px;
         }
-
         header img{
             max-width:360px;
             margin-bottom:10px;
         }
-
         section{
             padding:20px;
         }
-
         .categoria{
-            margin-bottom:30px;
+            margin-bottom:35px;
         }
-
         .categoria h2{
             border-bottom:2px solid #EAB308;
-            padding-bottom:5px;
+            padding-bottom:6px;
             color:#1E3A5F;
         }
-
         .item{
             display:flex;
             justify-content:space-between;
-            padding:12px 0;
+            padding:10px 0;
             border-bottom:1px dashed #ccc;
         }
-
         .item span{
             font-weight:bold;
         }
 
-        .imagem-item{
+        /* IMAGENS PEQUENAS */
+        .item .nome{
             display:flex;
-            justify-content:center;
-            gap:12px;
-            margin:15px 0;
-            flex-wrap:wrap;
+            align-items:center;
+            gap:8px;
+        }
+        .item .nome img{
+            width:36px;
+            height:36px;
+            object-fit:cover;
+            border-radius:6px;
         }
 
-        .imagem-item img{
-            width:42%;
-            border-radius:10px;
+        footer{
+            text-align:center;
+            padding:15px;
+            font-size:14px;
+            color:#555;
         }
-
-        /* ÁREA GARÇOM */
         .area-garcom{
             position:fixed;
             bottom:20px;
@@ -71,7 +69,6 @@
             align-items:flex-end;
             z-index:999;
         }
-
         .botao-garcom{
             background:#25D366;
             color:#fff;
@@ -81,29 +78,18 @@
             font-weight:bold;
             text-decoration:none;
             box-shadow:0 6px 15px rgba(0,0,0,0.35);
-            position:relative;
             z-index:2;
         }
-
         .personagem{
-            width:160px;
-            margin-left:-30px;   /* AGORA BEM COLADO */
-            margin-bottom:5px;   /* levemente por cima */
-            z-index:3;
+            width:150px;
+            margin-left:-30px;
+            margin-bottom:5px;
             animation: flutuar 2.5s ease-in-out infinite;
         }
-
         @keyframes flutuar{
             0%{ transform: translateY(0); }
             50%{ transform: translateY(-6px); }
             100%{ transform: translateY(0); }
-        }
-
-        footer{
-            text-align:center;
-            padding:15px;
-            font-size:14px;
-            color:#555;
         }
     </style>
 </head>
@@ -116,51 +102,101 @@
 
 <section>
 
-    <div class="categoria">
-        <h2>🍺 Bebidas</h2>
-        <div class="item"><div>Cerveja Lata</div><span>R$ 0,00</span></div>
-        <div class="item"><div>Cerveja Long Neck</div><span>R$ 0,00</span></div>
-        <div class="item"><div>Chopp Claro</div><span>R$ 0,00</span></div>
-        <div class="item"><div>Refrigerante Lata</div><span>R$ 0,00</span></div>
-        <div class="item"><div>Água</div><span>R$ 0,00</span></div>
+<!-- CERVEJAS -->
+<div class="categoria">
+<h2>🍺 Cervejas</h2>
+
+<div class="item">
+    <div class="nome">
+        <img src="img/heineken.jpg" alt="Heineken">
+        Heineken 600ml
     </div>
+    <span>R$ 15,00</span>
+</div>
 
-    <div class="categoria">
-        <h2>🍟 Porções</h2>
-        <div class="item"><div>Porção de Batata Frita</div><span>R$ 0,00</span></div>
+<div class="item"><div>Stella Artois 600ml</div><span>R$ 14,00</span></div>
+<div class="item"><div>Budweiser 600ml</div><span>R$ 13,00</span></div>
+<div class="item"><div>Spaten 600ml</div><span>R$ 13,00</span></div>
+<div class="item"><div>Original 600ml</div><span>R$ 12,00</span></div>
+<div class="item"><div>Amstel 600ml</div><span>R$ 11,00</span></div>
+<div class="item"><div>Skol / Brahma / Antarctica 600ml</div><span>R$ 11,00</span></div>
+<div class="item"><div>Petra / Império 600ml</div><span>R$ 9,00</span></div>
 
-        <div class="imagem-item">
-            <img src="batata.jpg">
-            <img src="torresmo.jpg">
-        </div>
+<br>
 
-        <div class="item"><div>Porção de Calabresa</div><span>R$ 0,00</span></div>
-        <div class="item"><div>Porção Mista</div><span>R$ 0,00</span></div>
+<div class="item"><div>Budweiser Litrão</div><span>R$ 13,00</span></div>
+<div class="item"><div>Skol / Brahma / Antarctica Litrão</div><span>R$ 13,00</span></div>
+
+<br>
+
+<div class="item"><div>Heineken Long Neck</div><span>R$ 8,50</span></div>
+<div class="item"><div>Corona Long Neck</div><span>R$ 8,50</span></div>
+<div class="item"><div>Stella Artois Long Neck</div><span>R$ 8,50</span></div>
+<div class="item"><div>Budweiser Long Neck</div><span>R$ 6,50</span></div>
+
+<br>
+
+<div class="item"><div>Heineken Lata</div><span>R$ 6,00</span></div>
+<div class="item"><div>Budweiser Lata</div><span>R$ 6,00</span></div>
+<div class="item"><div>Original Lata</div><span>R$ 6,00</span></div>
+<div class="item"><div>Stella Artois Lata</div><span>R$ 6,00</span></div>
+<div class="item"><div>Skol / Brahma / Antarctica Lata</div><span>R$ 4,50</span></div>
+<div class="item"><div>Petra / Império Lata</div><span>R$ 4,00</span></div>
+<div class="item"><div>Amstel Lata</div><span>R$ 4,50</span></div>
+
+</div>
+
+<!-- PORÇÕES -->
+<div class="categoria">
+<h2>🍟 Porções</h2>
+
+<div class="item">
+    <div class="nome">
+        <img src="img/batata.jpg" alt="Batata Frita">
+        Batata Frita
     </div>
+    <span>R$ 30,00</span>
+</div>
 
-    <div class="categoria">
-        <h2>🍔 Lanches</h2>
-        <div class="item"><div>Hambúrguer Simples</div><span>R$ 0,00</span></div>
-        <div class="item"><div>Hambúrguer Especial</div><span>R$ 0,00</span></div>
-        <div class="item"><div>X-Bacon</div><span>R$ 0,00</span></div>
-        <div class="item"><div>X-Tudo</div><span>R$ 0,00</span></div>
+<div class="item">
+    <div class="nome">
+        <img src="img/batata-bacon.jpg" alt="Batata com Bacon">
+        Batata Frita c/ Bacon e Queijo
     </div>
+    <span>R$ 55,00</span>
+</div>
+
+<div class="item"><div>Batata Frita c/ Bacon e Cheddar</div><span>R$ 55,00</span></div>
+<div class="item"><div>Polenta Frita</div><span>R$ 20,00</span></div>
+<div class="item"><div>Anel de Cebola Empanado</div><span>R$ 25,00</span></div>
+<div class="item"><div>Salame</div><span>R$ 25,00</span></div>
+<div class="item"><div>Azeitona</div><span>R$ 12,00</span></div>
+<div class="item"><div>Sardinha (sexta)</div><span>R$ 5,00</span></div>
+<div class="item"><div>Moela (quinta)</div><span>R$ 7,00</span></div>
+
+<div class="item">
+    <div class="nome">
+        <img src="img/costela.jpg" alt="Costela no Bafo">
+        Costela no Bafo (sexta e sábado)
+    </div>
+    <span>R$ 65,00 / kg</span>
+</div>
+
+</div>
 
 </section>
 
 <footer>
-    © Bar dos Meninos – Cardápio Digital
+© Bar dos Meninos – Cardápio Digital
 </footer>
 
-<!-- BOTÃO + PERSONAGEM -->
 <div class="area-garcom">
     <a class="botao-garcom"
        href="https://wa.me/5516982250638?text=Olá!%20Gostaria%20de%20chamar%20o%20garçom."
        target="_blank">
        🍺 Chamar Garçom
     </a>
-
-    <img src="garçom.png" class="personagem" alt="Garçom apontando">
+    <img src="garçom.png" class="personagem" alt="Garçom">
 </div>
 
 </body>
