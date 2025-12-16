@@ -1,103 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Cardápio - Bar dos Meninos</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Cardápio - Bar dos Meninos</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body{
-            margin:0;
-            font-family: Arial, Helvetica, sans-serif;
-            background:#F5F2EC;
-            color:#1F2937;
-        }
-        header{
-            text-align:center;
-            padding:25px 15px 10px;
-        }
-        header img{
-            max-width:360px;
-            margin-bottom:10px;
-        }
-        section{
-            padding:20px;
-        }
-        .categoria{
-            margin-bottom:35px;
-        }
-        .categoria h2{
-            border-bottom:2px solid #EAB308;
-            padding-bottom:6px;
-            color:#1E3A5F;
-        }
-        .item{
-            display:flex;
-            justify-content:space-between;
-            padding:10px 0;
-            border-bottom:1px dashed #ccc;
-        }
-        .item span{
-            font-weight:bold;
-        }
-
-        /* IMAGENS PEQUENAS – AJUSTE FINO */
-        .item .nome{
-            display:flex;
-            align-items:center;
-            gap:6px;
-        }
-        .item .nome img{
-            width:32px;
-            height:32px;
-            object-fit:cover;
-            border-radius:6px;
-        }
-
-        footer{
-            text-align:center;
-            padding:15px;
-            font-size:14px;
-            color:#555;
-        }
-        .area-garcom{
-            position:fixed;
-            bottom:20px;
-            left:50%;
-            transform:translateX(-50%);
-            display:flex;
-            align-items:flex-end;
-            z-index:999;
-        }
-        .botao-garcom{
-            background:#25D366;
-            color:#fff;
-            padding:14px 18px;
-            border-radius:18px;
-            font-size:14px;
-            font-weight:bold;
-            text-decoration:none;
-            box-shadow:0 6px 15px rgba(0,0,0,0.35);
-            z-index:2;
-        }
-        .personagem{
-            width:150px;
-            margin-left:-30px;
-            margin-bottom:5px;
-            animation: flutuar 2.5s ease-in-out infinite;
-        }
-        @keyframes flutuar{
-            0%{ transform: translateY(0); }
-            50%{ transform: translateY(-6px); }
-            100%{ transform: translateY(0); }
-        }
-    </style>
+<style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#F5F2EC;
+    color:#1F2937;
+}
+header{
+    text-align:center;
+    padding:25px 15px 10px;
+}
+header img{
+    max-width:360px;
+}
+section{
+    padding:20px;
+}
+.categoria{
+    margin-bottom:40px;
+}
+.categoria h2{
+    border-bottom:2px solid #EAB308;
+    padding-bottom:6px;
+    color:#1E3A5F;
+}
+.item{
+    display:flex;
+    justify-content:space-between;
+    padding:10px 0;
+    border-bottom:1px dashed #ccc;
+}
+.item span{
+    font-weight:bold;
+}
+.item .nome{
+    display:flex;
+    align-items:center;
+    gap:6px;
+}
+.item .nome img{
+    width:32px;
+    height:32px;
+    border-radius:6px;
+    object-fit:cover;
+}
+footer{
+    text-align:center;
+    padding:15px;
+    font-size:14px;
+    color:#555;
+}
+.area-garcom{
+    position:fixed;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    align-items:flex-end;
+    z-index:999;
+}
+.botao-garcom{
+    background:#25D366;
+    color:#fff;
+    padding:14px 18px;
+    border-radius:18px;
+    font-size:14px;
+    font-weight:bold;
+    text-decoration:none;
+    box-shadow:0 6px 15px rgba(0,0,0,.35);
+}
+.personagem{
+    width:150px;
+    margin-left:-30px;
+    animation: flutuar 2.5s ease-in-out infinite;
+}
+@keyframes flutuar{
+    0%{transform:translateY(0)}
+    50%{transform:translateY(-6px)}
+    100%{transform:translateY(0)}
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <img src="logo_principal.png" alt="Bar dos Meninos">
+<img src="logo_principal.png" alt="Bar dos Meninos">
 </header>
 
 <section>
@@ -106,14 +100,7 @@
 <div class="categoria">
 <h2>🍺 Cervejas</h2>
 
-<div class="item">
-    <div class="nome">
-        <img src="img/heineken.png" alt="Heineken">
-        Heineken 600ml
-    </div>
-    <span>R$ 15,00</span>
-</div>
-
+<div class="item"><div class="nome"><img src="img/heineken.png">Heineken 600ml</div><span>R$ 15,00</span></div>
 <div class="item"><div>Stella Artois 600ml</div><span>R$ 14,00</span></div>
 <div class="item"><div>Budweiser 600ml</div><span>R$ 13,00</span></div>
 <div class="item"><div>Spaten 600ml</div><span>R$ 13,00</span></div>
@@ -122,19 +109,13 @@
 <div class="item"><div>Skol / Brahma / Antarctica 600ml</div><span>R$ 11,00</span></div>
 <div class="item"><div>Petra / Império 600ml</div><span>R$ 9,00</span></div>
 
-<br>
-
 <div class="item"><div>Budweiser Litrão</div><span>R$ 13,00</span></div>
 <div class="item"><div>Skol / Brahma / Antarctica Litrão</div><span>R$ 13,00</span></div>
-
-<br>
 
 <div class="item"><div>Heineken Long Neck</div><span>R$ 8,50</span></div>
 <div class="item"><div>Corona Long Neck</div><span>R$ 8,50</span></div>
 <div class="item"><div>Stella Artois Long Neck</div><span>R$ 8,50</span></div>
 <div class="item"><div>Budweiser Long Neck</div><span>R$ 6,50</span></div>
-
-<br>
 
 <div class="item"><div>Heineken Lata</div><span>R$ 6,00</span></div>
 <div class="item"><div>Budweiser Lata</div><span>R$ 6,00</span></div>
@@ -144,52 +125,82 @@
 <div class="item"><div>Petra / Império Lata</div><span>R$ 4,00</span></div>
 <div class="item"><div>Amstel Lata</div><span>R$ 4,50</span></div>
 
+<div class="item"><div>Heineken Sem Álcool</div><span>R$ 8,00</span></div>
+<div class="item"><div>Brahma Sem Álcool</div><span>R$ 6,00</span></div>
+</div>
+
+<!-- DRINKS -->
+<div class="categoria">
+<h2>🍹 Drinks & Caipirinhas</h2>
+<div class="item"><div>Caipirinha Tradicional</div><span>R$ 20,00</span></div>
+<div class="item"><div>Caipiroska Morango</div><span>R$ 20,00</span></div>
+<div class="item"><div>Caipiroska Maracujá</div><span>R$ 20,00</span></div>
+<div class="item"><div>Gin Tônica Limão Siciliano</div><span>R$ 30,00</span></div>
+<div class="item"><div>Gin Morango</div><span>R$ 25,00</span></div>
+<div class="item"><div>Gin Tropical</div><span>R$ 25,00</span></div>
+<div class="item"><div>Gin Maçã Verde</div><span>R$ 25,00</span></div>
+<div class="item"><div>Branca de Neve</div><span>R$ 20,00</span></div>
+</div>
+
+<!-- DOSES -->
+<div class="categoria">
+<h2>🥃 Doses</h2>
+<div class="item"><div>Whisky Red Label</div><span>R$ 20,00</span></div>
+<div class="item"><div>Whisky White Horse</div><span>R$ 20,00</span></div>
+<div class="item"><div>Whisky Chivas</div><span>R$ 25,00</span></div>
+<div class="item"><div>Vodka Smirnoff</div><span>R$ 15,00</span></div>
+<div class="item"><div>Campari</div><span>R$ 15,00</span></div>
+<div class="item"><div>Licor 43</div><span>R$ 20,00</span></div>
+<div class="item"><div>Ypióca</div><span>R$ 5,00</span></div>
+<div class="item"><div>Salinas</div><span>R$ 5,00</span></div>
 </div>
 
 <!-- PORÇÕES -->
 <div class="categoria">
 <h2>🍟 Porções</h2>
 
-<div class="item">
-    <div class="nome">
-        <img src="img/batata.png" alt="Batata Frita">
-        Batata Frita
-    </div>
-    <span>R$ 30,00</span>
-</div>
-
+<div class="item"><div class="nome"><img src="img/batata.png">Batata Frita</div><span>R$ 30,00</span></div>
 <div class="item"><div>Batata Frita c/ Bacon e Queijo</div><span>R$ 55,00</span></div>
 <div class="item"><div>Batata Frita c/ Bacon e Cheddar</div><span>R$ 55,00</span></div>
 <div class="item"><div>Polenta Frita</div><span>R$ 20,00</span></div>
 <div class="item"><div>Anel de Cebola Empanado</div><span>R$ 25,00</span></div>
 <div class="item"><div>Salame</div><span>R$ 25,00</span></div>
 <div class="item"><div>Azeitona</div><span>R$ 12,00</span></div>
-<div class="item"><div>Sardinha (sexta)</div><span>R$ 5,00</span></div>
-<div class="item"><div>Moela (quinta)</div><span>R$ 7,00</span></div>
-
-<div class="item">
-    <div class="nome">
-        <img src="img/costela.png" alt="Costela no Bafo">
-        Costela no Bafo (sexta e sábado)
-    </div>
-    <span>R$ 65,00 / kg</span>
+<div class="item"><div>Frango à Passarinho</div><span>R$ 40,00</span></div>
+<div class="item"><div>Calabresa Acebolada</div><span>R$ 40,00</span></div>
+<div class="item"><div class="nome"><img src="img/costela.png">Costela no Bafo (sex/sáb)</div><span>R$ 65,00 / kg</span></div>
 </div>
 
+<!-- BOLINHOS -->
+<div class="categoria">
+<h2>🥟 Bolinhos</h2>
+<div class="item"><div>Bacalhau</div><span>R$ 35,00</span></div>
+<div class="item"><div>Tilápia c/ Queijo</div><span>R$ 35,00</span></div>
+<div class="item"><div>Kibe c/ Queijo</div><span>R$ 35,00</span></div>
+<div class="item"><div>Frango c/ Catupiry</div><span>R$ 35,00</span></div>
+<div class="item"><div>Carne Seca c/ Cabotiá</div><span>R$ 35,00</span></div>
+<div class="item"><div>Bolinho de Queijo</div><span>R$ 35,00</span></div>
+</div>
+
+<!-- NÃO ALCOÓLICOS -->
+<div class="categoria">
+<h2>🥤 Não Alcoólicos</h2>
+<div class="item"><div>Refrigerante Lata</div><span>R$ 6,00</span></div>
+<div class="item"><div>Refrigerante 600ml</div><span>R$ 8,00</span></div>
+<div class="item"><div>Refrigerante 2L</div><span>R$ 12,00</span></div>
+<div class="item"><div>Água sem Gás</div><span>R$ 3,00</span></div>
+<div class="item"><div>Água com Gás</div><span>R$ 4,00</span></div>
+<div class="item"><div>H2O 500ml</div><span>R$ 7,00</span></div>
+<div class="item"><div>H2O 1,5L</div><span>R$ 12,00</span></div>
 </div>
 
 </section>
 
-<footer>
-© Bar dos Meninos – Cardápio Digital
-</footer>
+<footer>© Bar dos Meninos – Cardápio Digital</footer>
 
 <div class="area-garcom">
-    <a class="botao-garcom"
-       href="https://wa.me/5516982250638?text=Olá!%20Gostaria%20de%20chamar%20o%20garçom."
-       target="_blank">
-       🍺 Chamar Garçom
-    </a>
-    <img src="garçom.png" class="personagem" alt="Garçom">
+<a class="botao-garcom" href="https://wa.me/5516982250638" target="_blank">🍺 Chamar Garçom</a>
+<img src="garçom.png" class="personagem">
 </div>
 
 </body>
